@@ -1,7 +1,18 @@
-#kontainer {
-    display: block;
+/* Set the display property of the container */
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
 
+/* Set the style of the cat elements */
 .cat {
-    border: 1px slateblue dotted;
+    background-color: white;
+    padding: 10px;
+}
+
+/* Emphasize the breed over the country */
+.cat > div:first-child {
+    font-weight: bold !important; 
 }
